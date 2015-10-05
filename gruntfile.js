@@ -297,17 +297,17 @@ module.exports = function(grunt) {
       },
       upload1: {
         files: {
-          '/17200/experiments/usatoday/2015/06/scotus-tracker/': 'js/main.js'
+          '/17200/experiments/usatoday/2015/06/scotus-tracker-2015/': 'js/main.js'
         }
       },
       upload2: {
         files: {
-          '/17200/experiments/usatoday/2015/06/scotus-tracker/': 'style/project.css'
+          '/17200/experiments/usatoday/2015/06/scotus-tracker-2015/': 'style/project.css'
         }
       },
       upload3: {
         files: {
-          '/17200/experiments/usatoday/2015/06/scotus-tracker/': 'data/*.json'
+          '/17200/experiments/usatoday/2015/06/scotus-tracker-2015/': 'data/*.json'
         }
       }
     },

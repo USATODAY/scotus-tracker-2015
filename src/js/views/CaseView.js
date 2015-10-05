@@ -13,10 +13,15 @@ define(
     return Backbone.View.extend({
         initialize: function() {
             console.log(this.model);
-            if (this.model.get("is_decided")) {
+            var status = this.model.get("status");
+            if (status == "decided") {
                 this.template = templates["decidedcase.html"];
+            } else if(status == "argued"){
+                this.template = templates["undecidedcase.html"];
+            } else if (status == "Not Yet Argued"){
+                this.template = templates["not-argued-case.html"];
             } else {
-                this.template = templates["unscheduledcase.html"];
+                this.template = templates["not-granted-case.html"];
             }
             this.render();
         },
