@@ -196,6 +196,18 @@ article.vert .iapp-decided-indicator {
   margin-right: 1em;
   }
 }
+
+.label-undecided {
+  background-color: transparentize($medium-grey, 0.4);
+  left: 1px;
+  margin-left: 1em;
+  position: relative;
+  float:right;
+  @media(max-width: 830px) {
+  margin-right: 1em;
+  }
+}
+
 article.vert .label-warning, article.vert .label-success {
   margin-left: 0;
   width:100%;

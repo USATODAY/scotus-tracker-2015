@@ -16,7 +16,7 @@ define(
             if (this.model.get("is_decided")) {
                 this.template = templates["decidedcase.html"];
             } else {
-                this.template = templates["undecidedcase.html"];
+                this.template = templates["unscheduledcase.html"];
             }
             this.render();
         },

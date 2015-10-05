@@ -16,7 +16,7 @@ define(
     } else {
 
 
-        dataURL = "http://" + hostname + "/services/webproxy/?url=http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/data/data.json";
+        dataURL = "http://" + hostname + "/services/webproxy/?url=http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker-2015/data/data.json";
 
     }
 
@@ -49,7 +49,13 @@ define(
 
                 // Add default share language from data to each case
 
-                newCaseObj.default_share_language = data.share_language;
+                newCaseObj.default_share_language = data.share_language;   
+
+
+                if (newCaseObj.status === "Not Yet Argued" || "Not Yet Granted"){
+
+
+                }
 /*
 
                 _.each(newCaseObj.for, function(forJustice) {
