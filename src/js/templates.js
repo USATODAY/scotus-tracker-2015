@@ -30,7 +30,7 @@ __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme
 ' \n        </p>\n    </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Outcome</h3>\n                <h4 class="iapp-outcome">' +
-((__t = (outcome)) == null ? '' : __t) +
+((__t = (analysis)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown</h3>\n            ';
  _.each(justices, function(justice, index) { ;
 __p += '\n            ';
@@ -115,8 +115,12 @@ __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
-((__t = (outcome)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown:</h3>\n            ';
+((__t = (analysis)) == null ? '' : __t) +
+'</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
+((__t = ( argument_for )) == null ? '' : __t) +
+'</h4>\n            </div>\n\n\n        </div>\n\n        <div class="iapp-case-argument iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument Against</h3>\n                <h4 class="iapp-case-argument-text">' +
+((__t = ( argument_against )) == null ? '' : __t) +
+'</h4>\n            </div>\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown:</h3>\n            ';
  _.each(justices, function(justice, index) { ;
 __p += '\n            ';
  if(index % 3 == 0) { ;
@@ -134,11 +138,7 @@ __p += '\n                    <td class="iapp-undecided"><img src="http://www.ga
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/>\n                    </td>\n                    ';
 });
-__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
-((__t = ( argument_for )) == null ? '' : __t) +
-'</h4>\n            </div>\n\n\n        </div>\n\n        <div class="iapp-case-argument iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument Against</h3>\n                <h4 class="iapp-case-argument-text">' +
-((__t = ( argument_against )) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n    </div>\n\n\n\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-share-buttons">\n            <a href="https://twitter.com/intent/tweet?url=' +
+__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n\n\n\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-share-buttons">\n            <a href="https://twitter.com/intent/tweet?url=' +
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
@@ -172,7 +172,11 @@ __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
-((__t = (outcome)) == null ? '' : __t) +
+((__t = (analysis)) == null ? '' : __t) +
+'</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
+((__t = ( argument_for )) == null ? '' : __t) +
+'</h4>\n            </div>\n\n\n        </div>\n\n        <div class="iapp-case-argument iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument Against</h3>\n                <h4 class="iapp-case-argument-text">' +
+((__t = ( argument_against )) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown:</h3>\n            ';
  _.each(justices, function(justice, index) { ;
 __p += '\n            ';
@@ -191,11 +195,7 @@ __p += '\n                    <td class="iapp-undecided"><img src="http://www.ga
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/>\n                    </td>\n                    ';
 });
-__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
-((__t = ( argument_for )) == null ? '' : __t) +
-'</h4>\n            </div>\n\n\n        </div>\n\n        <div class="iapp-case-argument iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument Against</h3>\n                <h4 class="iapp-case-argument-text">' +
-((__t = ( argument_against )) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n    </div>\n\n\n\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-share-buttons">\n            <a href="https://twitter.com/intent/tweet?url=' +
+__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n\n\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-share-buttons">\n            <a href="https://twitter.com/intent/tweet?url=' +
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
@@ -229,7 +229,7 @@ __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
-((__t = (outcome)) == null ? '' : __t) +
+((__t = (analysis)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown:</h3>\n            ';
  _.each(justices, function(justice, index) { ;
 __p += '\n            ';
@@ -274,7 +274,7 @@ __p += '\n                </tr>\n            </table>\n\n        </div>\n    </d
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
 
 }
 return __p
