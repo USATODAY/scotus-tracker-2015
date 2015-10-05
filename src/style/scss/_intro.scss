@@ -1,0 +1,23 @@
+.iapp-intro-panel {
+  font-family: $FUTURA-NORMAL;
+  text-align: center;
+  width: 100%;
+}
+
+.iapp-begin-button {
+  height: 80px;
+  margin: 0 auto;
+  width: 80px;
+}
+.intro-box {
+  background: rgba(33, 63, 153, 0.67);
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  padding: 4em 3em;
+  width: 27%;
+}
+.iapp-intro-panel.hide {
+  visibility: hidden;
+}

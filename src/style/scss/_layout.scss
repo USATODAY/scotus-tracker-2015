@@ -1,0 +1,40 @@
+@mixin panel() {
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    transform: translate(0, 0);
+    transition: transform 500ms ease;
+    width: 100%;
+}
+
+.iapp-panel {
+  color: #fff;
+  @include panel();
+    &.upcoming {
+        transform: translate(100%, 0);
+    }
+    &.done {
+        transform: translate(-100%, 0);
+    }
+}
+
+.iapp-wrap {
+    height: 100%;
+    overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+    width: 100%;
+}
+
+article {
+    height: 100%;
+    position: relative;
+}
+#overlay {
+  height: calc(100% - 40px) !important;
+}
+.transition-wrap {
+  height: 100%;
+}

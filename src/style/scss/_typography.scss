@@ -1,0 +1,61 @@
+$FUTURA-NORMAL: "Futura Today Normal", Arial, sans-serif;
+$FUTURA-LIGHT: "Futura Today Light", Arial, sans-serif;
+$FUTURA-BOLD: "Futura Today Bold", Arial, sans-serif;
+$FUTURA-DEMIBOLD: "Futura Today DemiBold", Arial, sans-serif;
+
+html { font-weight: normal; font-family: $FUTURA-NORMAL;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $FUTURA-BOLD;
+}
+
+.chatter {
+  font-size: 1em;
+  margin: 0 auto 2em auto;
+  max-width: 30em;
+}
+
+.page-header {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  @media (min-width: 1100px) {
+    font-size: 2em;
+  }
+}
+
+.detail-header {
+  font-family: $FUTURA-DEMIBOLD;
+}
+
+.info-text {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+strong {
+  font-family: $FUTURA-BOLD;
+}
+
+h1.iapp-page-header {
+    color: #fff;
+    font: 400 2em/1em $FUTURA-LIGHT;
+    margin: 1em 0;
+    padding: 0;
+}
+.big-head {
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.small-head {
+  font-size: 1.5em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.iapp-page-chatter {
+  color: #fff;
+}
+.small-head.center {
+  text-align: center;
+}
