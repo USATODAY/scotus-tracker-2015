@@ -108,13 +108,13 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme Court Decision Tracker</div>\n\n    <div class="iapp-top-row-wrapper">\n        <div class="case-bar-wrap">\n            <h2 class="iapp-case-name">' +
 ((__t = (case_title)) == null ? '' : __t) +
-' </h2>\n            <span class="label label-undecided">Oral Arguments: ' +
+' </h2>\n            <span class="label label-undecided"> ' +
 ((__t = (case_date)) == null ? '' : __t) +
 '</span>\n            <p class="iapp-decided-indicator">' +
 ((__t = (case_name )) == null ? '' : __t) +
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Analysis</h3>\n                <h4 class="iapp-outcome">' +
 ((__t = (analysis)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
 ((__t = ( argument_for )) == null ? '' : __t) +
@@ -165,13 +165,13 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme Court Decision Tracker</div>\n\n    <div class="iapp-top-row-wrapper">\n        <div class="case-bar-wrap">\n            <h2 class="iapp-case-name">' +
 ((__t = (case_title)) == null ? '' : __t) +
-' </h2>\n            <span class="label label-undecided">Oral Arguments: ' +
+' </h2>\n            <span class="label label-undecided">Status: ' +
 ((__t = (case_date)) == null ? '' : __t) +
 ' </span>\n            <p class="iapp-decided-indicator">' +
 ((__t = (case_name )) == null ? '' : __t) +
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Analysis</h3>\n                <h4 class="iapp-outcome">' +
 ((__t = (analysis)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-argument iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-argument-title iapp-case-section-label">Argument For</h3>\n                <h4 class="iapp-case-argument-text">' +
 ((__t = ( argument_for )) == null ? '' : __t) +
@@ -228,7 +228,7 @@ __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme
 ((__t = (case_name )) == null ? '' : __t) +
 '   </p>\n        </div>\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Question</h3>\n                <h4 class="iapp-case-question">' +
 ((__t = (question)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Possible Outcome</h3>\n                <h4 class="iapp-outcome">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Analysis</h3>\n                <h4 class="iapp-outcome">' +
 ((__t = (analysis)) == null ? '' : __t) +
 '</h4>\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-full-column">\n            <h3 class="iapp-case-section-label">Decision Breakdown:</h3>\n            ';
  _.each(justices, function(justice, index) { ;
