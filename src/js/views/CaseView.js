@@ -18,7 +18,7 @@ define(
                 this.template = templates["decidedcase.html"];
             } else if(status == "argued"){
                 this.template = templates["undecidedcase.html"];
-            } else if (status == "Not Yet Argued"){
+            } else if (status == "granted"){
                 this.template = templates["not-argued-case.html"];
             } else {
                 this.template = templates["not-granted-case.html"];
