@@ -27,7 +27,7 @@ define(
             jQuery.getJSON(dataURL, function(data) {        
                 
                 //parse raw data from JSON
-                _this.data = _this.parseData(data[0]);
+                _this.data = _this.parseData(data);
 
                 // trigger the dataReady Backbone event which kicks off the app
                 Backbone.trigger("dataReady", this);
@@ -38,55 +38,9 @@ define(
             var parsedCases = [];
             var _this = this;
             _.each(data.cases, function(caseObj) {
-                newCaseObj = caseObj;
 
-                // Split for and against names into arrays
-                newCaseObj.for = newCaseObj.for.split(", ");
-                newCaseObj.against = newCaseObj.against.split(", ");
-                newCaseObj.inPart = newCaseObj.wildcard_or_concur_in_part.split(", ");
-                var justicesObj = new justices.Justices();
-                var justiceArray = justicesObj.justices;
-
-                // Add default share language from data to each case
-
-                newCaseObj.default_share_language = data.share_language;   
-
-
-                if (newCaseObj.status === "Not Yet Argued" || "Not Yet Granted"){
-
-
-                }
-/*
-
-                _.each(newCaseObj.for, function(forJustice) {
-                    var justiceObj = _.findWhere(justiceArray, {"last_name": forJustice});
-                    justiceObj.status = "for";
-                });
-                _.each(newCaseObj.against, function(againstJustice) {
-                    var justiceObj = _.findWhere(justiceArray, {"last_name": againstJustice});
-                    justiceObj.status = "against";
-                });
-                _.each(newCaseObj.inPart, function(inPartJustice) {
-                    if (inPartJustice !== "") {
-                        var justiceObj = _.findWhere(justiceArray, {"last_name": inPartJustice});
-                        justiceObj.status = "in-part";
-                    }
-                });
-*/
-                newCaseObj.justices = justiceArray;
-
-                //convert is_decided to boolean value
-                if (newCaseObj.is_decided === "") {
-                    newCaseObj.is_decided = false;
-                } else {
-                    newCaseObj.is_decided = true;
-                }
-                
-                //add slug to each case
-                newCaseObj.slug = _this.slugify(newCaseObj.case_name);
-
-
-                parsedCases.push(newCaseObj);
+                caseObj.default_share_language = data.share_language;   
+                parsedCases.push(caseObj);
             });
             data.cases = parsedCases;
             return data;
