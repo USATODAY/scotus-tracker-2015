@@ -222,7 +222,7 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class="iapp-case-wrap">\n    <div class="small-head center">Supreme Court Decision Tracker</div>\n\n    <div class="iapp-top-row-wrapper">\n        <div class="case-bar-wrap">\n            <h2 class="iapp-case-name">' +
 ((__t = (case_title)) == null ? '' : __t) +
-' </h2>\n            <span class="label label-warning">Argued: ' +
+' </h2>\n            <span class="label label-warning">' +
 ((__t = (case_date)) == null ? '' : __t) +
 '</span>\n            <p class="iapp-decided-indicator">' +
 ((__t = (case_name )) == null ? '' : __t) +
