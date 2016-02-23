@@ -12,7 +12,6 @@ define(
 
     return Backbone.View.extend({
         initialize: function() {
-            console.log(this.model);
             var status = this.model.get("status");
             if (status == "decided") {
                 this.template = templates["decidedcase.html"];

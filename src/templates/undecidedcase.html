@@ -33,7 +33,7 @@
             <table class="table iapp-decision-table">
                 <tr>
                     <%}%>
-                    <td class="iapp-undecided"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/<%=justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() %>.jpg" width="100%"/>
+                    <td class="iapp-undecided <%if (justice.last_name == 'Scalia') { print('iapp-inactive')} %>"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/<%=justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() %>.jpg" width="100%"/>
                         <%=justice.first_name%><br/><%=justice.last_name%><br/>
                     </td>
                     <%})%>

@@ -130,7 +130,9 @@ __p += '\n            </tr>\n            </table>\n            ';
 };
 __p += '\n            <table class="table iapp-decision-table">\n                <tr>\n                    ';
 };
-__p += '\n                    <td class="iapp-undecided"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-undecided ';
+if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
+__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -187,7 +189,9 @@ __p += '\n            </tr>\n            </table>\n            ';
 };
 __p += '\n            <table class="table iapp-decision-table">\n                <tr>\n                    ';
 };
-__p += '\n                    <td class="iapp-undecided"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-undecided ';
+if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
+__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -240,7 +244,9 @@ __p += '\n            </tr>\n            </table>\n            ';
 };
 __p += '\n            <table class="table iapp-decision-table">\n                <tr>\n                    ';
 };
-__p += '\n                    <td class="iapp-undecided"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-undecided ';
+if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
+__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +

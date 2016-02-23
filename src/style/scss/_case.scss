@@ -88,6 +88,7 @@ article.vert .iapp-case-split-column {
 case decision table styles
 ******/
 
+
 table.iapp-decision-table {
   border-collapse: separate;
   border-spacing: 0.2em 0;
@@ -208,6 +209,18 @@ article.vert .iapp-decided-indicator {
   }
 }
 
+table tbody tr td.iapp-inactive {
+    border: solid 3px $dark-grey;
+    // border-top: solid 2px $dark-grey;
+    img {
+        display: block;
+        background: white;
+        margin: 0;
+        padding: 0;
+        opacity: 0.2;
+    }
+}
+
 article.vert .label-warning, article.vert .label-success {
   margin-left: 0;
   width:100%;
@@ -267,7 +280,7 @@ case quote styles
 }
 
 table.iapp-decision-table td img{
-  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 table.iapp-decision-table td span{

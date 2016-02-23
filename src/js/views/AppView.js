@@ -51,7 +51,6 @@ define(
                 //create new case collection from data returned from the dataManager
                 var caseCollection = new CaseCollection(dataManager.data.cases);
 
-                console.log(caseCollection);
 
                 //loop through each model in the case collection and create a case view for it. 
                 //Then add the case view to the subview array.
@@ -63,7 +62,6 @@ define(
                 });
             },
             detectScroll: function() {
-                console.log(jQuery(".iapp-panel").scrollTop());
             },
             onSizeChange: function() {
                 if (window.innerWidth > 830) {
@@ -136,8 +134,6 @@ define(
                 newSub.$el.removeClass('done').addClass('active');
             },
             goToCase: function(caseSlug) {
-                //@TODO find the relevant case and navigate to it
-                console.log(caseSlug);
 
                 var introPanel = jQuery(".iapp-intro-panel");
                 introPanel.hide(500);
