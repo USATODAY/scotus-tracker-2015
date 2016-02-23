@@ -19,8 +19,12 @@ define(
 
                     //Make data request
                     dataManager.getData();
+                    var $transitionWrap = jQuery('.transition-wrap');
+                    $transitionWrap.height($transitionWrap.parent().height());
 
                     jQuery(window).resize(function() {
+                        //set transition wrap height to the height of parent to fix Chrome bug.
+                        $transitionWrap.height($transitionWrap.parent().height());
                         Backbone.trigger("window:resize");
                     });
 
