@@ -122,6 +122,11 @@ td.iapp-against {
   color: white;
 }
 
+td.iapp-inactive {
+  background-color: transparentize($medium-grey, 0.4);
+  color: white;
+}
+
 /******
 case nav styles
 ******/

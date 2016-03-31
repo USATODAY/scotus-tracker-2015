@@ -26,6 +26,7 @@ define(
                 'orientationchange' : 'onSizeChange'
             },
             onDataReady: function() {
+                console.log(dataManager.data);
                 this.render();
                 Backbone.history.start();
                 this.maxSubViews = dataManager.data.cases.length;
