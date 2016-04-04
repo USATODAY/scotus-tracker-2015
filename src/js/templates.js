@@ -77,11 +77,27 @@ __p += '\n                    <td class="iapp-against"><img src="http://www.gann
 };
 __p += '\n\n                    ';
 });
-__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n        <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Opinion</h3>\n\n                <h4 class="iapp-case-quote">' +
+__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n        <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_1_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_1_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Opinion</h3>\n                ';
+ } ;
+__p += '\n\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_1 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_1_source)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Dissent</h3>\n\n                <h4 class="iapp-case-quote">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_2_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_2_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Dissent</h3>\n                ';
+ } ;
+__p += '\n\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_2 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_2_source)) == null ? '' : __t) +
@@ -144,11 +160,27 @@ __p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scot
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/>\n                    </td>\n                    ';
 });
-__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n\n                <h4 class="iapp-case-quote">' +
+__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_1_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_1_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n                ';
+ } ;
+__p += '\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_1 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_1_source)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n\n                <h4 class="iapp-case-quote">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_2_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_2_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n                ';
+ } ;
+__p += '\n\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_2 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_2_source)) == null ? '' : __t) +
@@ -329,11 +361,27 @@ __p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scot
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/>\n                    </td>\n                    ';
 });
-__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n\n                <h4 class="iapp-case-quote">' +
+__p += '\n                </tr>\n            </table>\n\n        </div>\n    </div>\n    <div class="iapp-row-wrapper">\n        <div class="iapp-case-split-column">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_1_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_1_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n                ';
+ } ;
+__p += '\n\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_1 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_1_source)) == null ? '' : __t) +
-'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n\n                <h4 class="iapp-case-quote">' +
+'</h4>\n            </div>\n        </div>\n        <div class="iapp-case-split-column right">\n            <div class="iapp-case-section">\n                ';
+ if(typeof quote_2_override !== 'undefined') {;
+__p += '\n                <h3 class="iapp-case-section-label">' +
+((__t = (quote_2_override)) == null ? '' : __t) +
+'</h3>\n                ';
+ } else {;
+__p += '\n                <h3 class="iapp-case-section-label">Oral Argument</h3>\n                ';
+ } ;
+__p += '\n\n                <h4 class="iapp-case-quote">' +
 ((__t = ( quote_2 )) == null ? '' : __t) +
 '</h4>\n\n                <h4 class="iapp-case-quote-source">' +
 ((__t = ( quote_2_source)) == null ? '' : __t) +
