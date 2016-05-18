@@ -52,7 +52,11 @@
                 <% } %>
                 <h4 class="iapp-case-quote"><%= quote_1 %></h4>
 
-                <h4 class="iapp-case-quote-source"><%= quote_1_source%></h4>
+                <% if(typeof quote_1_source_override !== 'undefined') {%>
+                    <h4 class="iapp-case-quote-source"><%= quote_1_source_override%></h4>
+                <% } else {%>
+                    <h4 class="iapp-case-quote-source"><%= quote_1_source%></h4>
+                <% } %>
             </div>
         </div>
         <div class="iapp-case-split-column right">
@@ -65,7 +69,11 @@
 
                 <h4 class="iapp-case-quote"><%= quote_2 %></h4>
 
-                <h4 class="iapp-case-quote-source"><%= quote_2_source%></h4>
+                <% if(typeof quote_2_source_override !== 'undefined') {%>
+                    <h4 class="iapp-case-quote-source"><%= quote_2_source_override%></h4>
+                <% } else {%>
+                    <h4 class="iapp-case-quote-source"><%= quote_2_source%></h4>
+                <% } %>
             </div>
         </div>
     </div>   
