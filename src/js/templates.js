@@ -74,6 +74,14 @@ __p += '\n                    <td class="iapp-against"><img src="http://www.gann
 '<br/>' +
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/><br/><span class="vote">DISSENT</span></td>\n                    ';
+} else if(justice.status == "recused") { ;
+__p += '\n                    <td class="iapp-recused"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
+'.jpg" width="100%"/>\n                        ' +
+((__t = (justice.first_name)) == null ? '' : __t) +
+'<br/>' +
+((__t = (justice.last_name)) == null ? '' : __t) +
+'<br/><br/><span class="vote">RECUSED</span></td>\n                    ';
 };
 __p += '\n\n                    ';
 });
