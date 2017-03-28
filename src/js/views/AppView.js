@@ -166,7 +166,7 @@ define(
                 }
             },
             getURL: function() {
-                 return 'http://' + window.location.hostname + window.location.pathname;
+                 return 'https://' + window.location.hostname + window.location.pathname;
             }
         });
 });

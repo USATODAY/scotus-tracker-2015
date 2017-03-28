@@ -43,7 +43,7 @@ __p += '\n            <table class="table iapp-decision-table">\n               
 };
 __p += '\n                    ';
  if(justice.status == "for") { ;
-__p += '\n                    <td class="iapp-for"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-for"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -51,7 +51,7 @@ __p += '\n                    <td class="iapp-for"><img src="http://www.gannett-
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/><br/><span class="vote">MAJORITY</span></td>\n                    ';
 } else if(justice.status == "in-part") { ;
-__p += '\n                    <td class="iapp-in-part"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-in-part"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -59,7 +59,7 @@ __p += '\n                    <td class="iapp-in-part"><img src="http://www.gann
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/><br/><span class="vote">CONCUR</span></td>\n                    ';
 } else if(justice.status == "inactive") { ;
-__p += '\n                    <td class="iapp-inactive"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-inactive"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -67,7 +67,7 @@ __p += '\n                    <td class="iapp-inactive"><img src="http://www.gan
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/><br/><span class="vote"></span></td>\n                    ';
 } else if(justice.status == "against") { ;
-__p += '\n                    <td class="iapp-against"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-against"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -75,7 +75,7 @@ __p += '\n                    <td class="iapp-against"><img src="http://www.gann
 ((__t = (justice.last_name)) == null ? '' : __t) +
 '<br/><br/><span class="vote">DISSENT</span></td>\n                    ';
 } else if(justice.status == "recused") { ;
-__p += '\n                    <td class="iapp-recused"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '\n                    <td class="iapp-recused"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -133,7 +133,7 @@ __p += '\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
+'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
 ((__t = (fb_id)) == null ? '' : __t) +
 '&link=' +
 ((__t = (fbShare)) == null ? '' : __t) +
@@ -143,7 +143,7 @@ __p += '\n            </div>\n        </div>\n    </div>\n\n    <div class="iapp
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n</div>\n';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n</div>\n';
 
 }
 return __p
@@ -176,7 +176,7 @@ __p += '\n            <table class="table iapp-decision-table">\n               
 };
 __p += '\n                    <td class="iapp-undecided ';
 if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
-__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -232,7 +232,7 @@ __p += '\n            </div>\n        </div>\n    </div>   \n    <div class="iap
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
+'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
 ((__t = (fb_id)) == null ? '' : __t) +
 '&link=' +
 ((__t = (fbShare)) == null ? '' : __t) +
@@ -242,7 +242,7 @@ __p += '\n            </div>\n        </div>\n    </div>   \n    <div class="iap
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
 
 }
 return __p
@@ -279,7 +279,7 @@ __p += '\n            <table class="table iapp-decision-table">\n               
 };
 __p += '\n                    <td class="iapp-undecided ';
 if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
-__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -291,7 +291,7 @@ __p += '\n                </tr>\n            </table>\n\n        </div>\n    </d
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
+'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
 ((__t = (fb_id)) == null ? '' : __t) +
 '&link=' +
 ((__t = (fbShare)) == null ? '' : __t) +
@@ -301,7 +301,7 @@ __p += '\n                </tr>\n            </table>\n\n        </div>\n    </d
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
 
 }
 return __p
@@ -338,7 +338,7 @@ __p += '\n            <table class="table iapp-decision-table">\n               
 };
 __p += '\n                    <td class="iapp-undecided ';
 if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
-__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -350,7 +350,7 @@ __p += '\n                </tr>\n            </table>\n\n        </div>\n    </d
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
+'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
 ((__t = (fb_id)) == null ? '' : __t) +
 '&link=' +
 ((__t = (fbShare)) == null ? '' : __t) +
@@ -360,7 +360,7 @@ __p += '\n                </tr>\n            </table>\n\n        </div>\n    </d
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
 
 }
 return __p
@@ -393,7 +393,7 @@ __p += '\n            <table class="table iapp-decision-table">\n               
 };
 __p += '\n                    <td class="iapp-undecided ';
 if (justice.last_name == 'Scalia') { print('iapp-inactive')} ;
-__p += '"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
+__p += '"><img src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/' +
 ((__t = (justice.name.substr(justice.name.lastIndexOf(" ") + 1, justice.name.length - justice.name.lastIndexOf(" ") + 1).toLowerCase() )) == null ? '' : __t) +
 '.jpg" width="100%"/>\n                        ' +
 ((__t = (justice.first_name)) == null ? '' : __t) +
@@ -449,7 +449,7 @@ __p += '\n            </div>\n        </div>\n    </div>   \n    <div class="iap
 ((__t = (twitterShare)) == null ? '' : __t) +
 '&text=' +
 ((__t = (encodedShare)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
+'"\n               class="iapp-share-button iapp-share-twitter iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/twitter.svg"\n                    alt="Twitter share"></a>\n            <a href="https://www.facebook.com/dialog/feed?display=popup&app_id=' +
 ((__t = (fb_id)) == null ? '' : __t) +
 '&link=' +
 ((__t = (fbShare)) == null ? '' : __t) +
@@ -459,7 +459,7 @@ __p += '\n            </div>\n        </div>\n    </div>   \n    <div class="iap
 ((__t = (encodedShare)) == null ? '' : __t) +
 '&redirect_uri=' +
 ((__t = (fb_redirect)) == null ? '' : __t) +
-'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="http://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
+'"\n               class="iapp-share-button iapp-share-facebook iapp-share-popup" target="_blank"><img\n                    src="https://www.gannett-cdn.com/experiments/usatoday/2015/06/scotus-tracker/img/fb.svg"\n                    alt="Facebook share"></a>\n        </div>\n    </div>\n\n    <div class="iapp-case-nav">\n        <div class="iapp-button iapp-button-blue iapp-case-nav-button iapp-case-next-button">\n            <div class="iapp-button-text">Next</div>\n        </div>\n        <div class="iapp-button iapp-button-blue  iapp-case-nav-button iapp-case-previous-button">\n            <div class="iapp-button-text">Back</div>\n        </div>\n    </div>\n\n</div>\n';
 
 }
 return __p
